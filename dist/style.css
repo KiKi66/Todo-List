@@ -119,15 +119,6 @@ h1:active {
     border-radius: 10px;
 }
 
-.maincontent li #deleteIcon {
-    margin-left: 15px;
-    color: red;
-    font-size: 20px;
-}
-
-.maincontent li #deleteIcon:active {
-    transform: scale(0.8);
-}
 
 .maincontent li #checkbox {
     margin-right: 10px;
@@ -160,10 +151,6 @@ li {
     position: relative;
 }
 
-li:active {
-    transform: scale(0.9);
-}
-
 .maincontent li.complete::after {
     content: "";
     position: absolute;
@@ -186,4 +173,112 @@ li:active {
     width: 50%;
     background-color: rgb(238, 32, 32);
     opacity: 30%;
+}
+
+#inputdescription {
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(249, 242, 234);
+    height: 80px;
+}
+
+#inputdescription:focus {
+    border: none;
+}
+
+#dateInput {
+    margin:auto;
+    height: 30px;
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#addBtn {
+    margin: 0 10% 0 25%;
+}
+
+#cancelBtn {
+    background-color: rgb(237, 57, 57);
+}
+
+.add-project input {
+    height: 24px;
+    width: 80%;
+}
+
+.add-project button {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+.add-project #cancelPJ {
+    background-color: rgb(234, 85, 85);
+}
+
+.hide {
+    opacity: 0;
+    display: none;
+}
+
+.highlight {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#task-input {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#input-area {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    
+}
+
+#date-input {
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+#input-btn {
+    display: flex;
+    gap: 20px;
+}
+
+#cancelTsk {
+    background-color: red;
+}
+
+.move-up {
+    position: relative;
+    bottom: 220px;
+}
+
+.project-name {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#deleteIcon {
+    margin-left: 15px;
+    color: red;
+    font-size: 20px;
+}
+
+#deleteIcon:active {
+    transform: scale(0.8);
 }
